@@ -1,0 +1,4 @@
+
+**/*.js
+node_module
+build
