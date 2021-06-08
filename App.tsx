@@ -1,20 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
+/* eslint-disable react/style-prop-object */
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, View } from 'react-native';
+import Home from './src/pages/Home';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+const App: React.FC = () => (
+  <View style={styles.container}>
+    <Home />
+    <StatusBar style="light" translucent />
+  </View>
+);
+
+export default App;
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#993399',
     alignItems: 'center',
     justifyContent: 'center',
   },
